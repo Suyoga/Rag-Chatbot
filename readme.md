@@ -4,20 +4,20 @@ A Retrieval-Augmented Generation (RAG) application that allows semantic search a
 This project demonstrates how to build a subject specific chatbot for academic knowledge retrieval.
 
 Features
-PDF Ingestion – Upload and index course PDFs.
-Chunking – Splits PDFs into manageable chunks for semantic search.
-Vector Store – Uses ChromaDB for embeddings and retrieval.
-Contextual Q&A – Uses Ollama (LLM) to answer questions with context from PDFs.
-Chat Interface – Simple web-based interface for querying course material.
-Extensible – Easily extendable to multiple subjects or course materials.
+1. PDF Ingestion – Upload and index course PDFs.
+2. Chunking – Splits PDFs into manageable chunks for semantic search.
+3. Vector Store – Uses ChromaDB for embeddings and retrieval.
+4. Contextual Q&A – Uses Ollama (LLM) to answer questions with context from PDFs.
+5. Chat Interface – Simple web-based interface for querying course material.
+6. Extensible – Easily extendable to multiple subjects or course materials.
 
 Tech Stack
-Backend: Python, FastAPI
-Vector Database: ChromaDB
-Embeddings: Ollama LLM embeddings
-Frontend: HTML, TailwindCSS, Vanilla JS
-PDF Parsing: PyMuPDF (fitz)
-HTTP Requests: requests library
+1. Backend: Python, FastAPI
+2. Vector Database: ChromaDB
+3. Embeddings: Ollama LLM embeddings
+4. Frontend: HTML, TailwindCSS, Vanilla JS
+5. PDF Parsing: PyMuPDF (fitz)
+6. HTTP Requests: requests library
 
 Project Structure
 Backend/
@@ -31,28 +31,19 @@ Backend/
     └── app.js          # JS frontend logic
 
 Getting Started
-1️Clone the repository
+1️Clone the repository: 
 git clone https://github.com/Suyoga/Rag-Chatbot.git
 cd Rag-Chatbot/Backend
-2️Create virtual environment & install dependencies
+2️Create virtual environment & install dependencies: 
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 # .venv\Scripts\activate   # Windows
 
-pip install -r requirements.txt
-Dependencies include:
-fastapi
-uvicorn
-requests
-chromadb
-PyMuPDF
-jinja2
-
 3️Run Ollama LLM
 Ensure Ollama is installed and the model is pulled:
-ollama list               # Check available models
-ollama pull llama3.2      # Pull if not available
-ollama serve              # Start Ollama server
+i. ollama list               # Check available models
+ii. ollama pull llama3.2      # Pull if not available
+iii. ollama serve              # Start Ollama server
 
 4️Ingest PDFs
 python ingest.py --pdf /path/to/course.pdf
