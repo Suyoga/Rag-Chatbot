@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG Chatbot</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+  <div class="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-6">
+    <h1 class="text-2xl font-bold mb-4 text-center text-gray-800">📚 RAG Chatbot</h1>
+
+    <div id="chat-box" class="h-96 overflow-y-auto border border-gray-300 rounded-lg p-3 bg-gray-50 mb-4">
+    </div>
+
+    <div class="flex space-x-2">
+      <input id="user-input" type="text" placeholder="Ask me something..." 
+             class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
+      <button id="send-btn" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+        Send
+      </button>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
