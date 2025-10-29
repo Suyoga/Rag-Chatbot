@@ -19,17 +19,6 @@ Tech Stack
 5. PDF Parsing: PyMuPDF (fitz)
 6. HTTP Requests: requests library
 
-Project Structure
-Backend/
-│
-├── app.py              # FastAPI backend
-├── ingest.py           # PDF ingestion & embedding script
-├── pdf_utils.py        # PDF text extraction & chunking
-├── templates/
-│   └── index.html      # Chat interface
-└── static/
-    └── app.js          # JS frontend logic
-
 Getting Started
 1️Clone the repository: 
 git clone https://github.com/Suyoga/Rag-Chatbot.git
@@ -37,7 +26,7 @@ cd Rag-Chatbot/Backend
 2️Create virtual environment & install dependencies: 
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
-# .venv\Scripts\activate   # Windows
+.venv\Scripts\activate   # Windows
 
 3️Run Ollama LLM
 Ensure Ollama is installed and the model is pulled:
